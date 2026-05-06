@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos, Condiciones y Política de Privacidad | Nómina Clara</title>
+  <meta name="description" content="Términos y condiciones de uso, política de privacidad, tratamiento de datos, cookies y publicidad de Nómina Clara." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f9fb;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --ink: #10202f;
+      --muted: #64748b;
+      --soft: #94a3b8;
+      --line: rgba(15, 23, 42, 0.10);
+      --primary: #0f766e;
+      --primary-2: #14b8a6;
+      --primary-soft: rgba(20, 184, 166, 0.13);
+      --blue-soft: rgba(37, 99, 235, 0.10);
+      --shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --display: 'Source Serif 4', Georgia, serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(20,184,166,0.14), transparent 32rem),
+        radial-gradient(circle at 86% 8%, rgba(37,99,235,0.10), transparent 28rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 56px;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(15,118,110,.28);
+    }
+
+    .brand-title {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+
+    .brand-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .back-link {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.78);
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(255,255,255,.88);
+      border-radius: var(--radius-xl);
+      padding: clamp(26px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      margin: 20px 0 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      right: -90px;
+      bottom: -120px;
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(15,118,110,.20);
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: 18px;
+    }
+
+    .badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--primary-2);
+      box-shadow: 0 0 0 6px rgba(20,184,166,.12);
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      line-height: .95;
+      letter-spacing: -0.055em;
+      max-width: 760px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .notice {
+      background: #10202f;
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin: 18px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .notice strong { display: block; margin-bottom: 4px; }
+    .notice span { color: rgba(255,255,255,.74); font-size: 14px; }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: 0 18px 50px rgba(15,23,42,.045);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--soft);
+    }
+
+    .toc a {
+      display: block;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 0;
+      border-top: 1px solid rgba(15,23,42,.06);
+    }
+
+    .toc a:hover { color: var(--primary); }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 18px 60px rgba(15,23,42,.055);
+      padding: clamp(22px, 4vw, 34px);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 18px 0 8px;
+    }
+
+    p { color: var(--muted); margin-bottom: 12px; }
+
+    ul {
+      color: var(--muted);
+      padding-left: 22px;
+      margin: 8px 0 12px;
+    }
+
+    li { margin-bottom: 7px; }
+
+    .highlight-box {
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+
+    .highlight-box p:last-child { margin-bottom: 0; }
+
+    .data-table {
+      overflow-x: auto;
+      margin: 14px 0;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+      background: white;
+    }
+
+    th, td {
+      padding: 13px 15px;
+      border-bottom: 1px solid rgba(15,23,42,.07);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--soft);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      background: var(--surface-2);
+    }
+
+    td { color: var(--muted); }
+    tr:last-child td { border-bottom: 0; }
+
+    .date-box {
+      display: inline-flex;
+      background: var(--blue-soft);
+      color: #1e3a8a;
+      border: 1px solid rgba(37, 99, 235, .16);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+      .content-layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 22px, 980px); }
+      .site-header { align-items: flex-start; }
+      .back-link { display: none; }
+      h1 { font-size: clamp(2.35rem, 12vw, 4rem); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header" aria-label="Encabezado principal">
+      <a href="index.html" class="brand" aria-label="Volver a Nómina Clara">
+        <div class="brand-mark">N</div>
+        <div>
+          <div class="brand-title">Nómina Clara</div>
+          <div class="brand-subtitle">Colombia 2026</div>
+        </div>
+      </a>
+      <a class="back-link" href="index.html">Volver a la calculadora</a>
+    </header>
+
+    <section class="hero">
+      <div class="badge">Documento legal informativo</div>
+      <h1>Términos, condiciones y política de privacidad.</h1>
+      <p>Este documento regula el uso de la página Nómina Clara, una herramienta digital gratuita y orientativa para calcular valores aproximados de nómina en Colombia.</p>
+      <div class="date-box">Última actualización: 5 de mayo de 2026</div>
+    </section>
+
+    <div class="notice">
+      <strong>Importante</strong>
+      <span>Esta página no presta asesoría jurídica, laboral, contable ni tributaria. Los resultados de la calculadora son estimativos y deben ser verificados por un profesional o por el área de nómina correspondiente.</span>
+    </div>
+
+    <main class="content-layout">
+      <aside class="toc" aria-label="Tabla de contenido">
+        <strong>Contenido</strong>
+        <a href="#identificacion">1. Identificación</a>
+        <a href="#aceptacion">2. Aceptación</a>
+        <a href="#servicio">3. Servicio ofrecido</a>
+        <a href="#responsabilidad">4. Responsabilidad</a>
+        <a href="#uso">5. Uso permitido</a>
+        <a href="#datos">6. Datos personales</a>
+        <a href="#cookies">7. Cookies y publicidad</a>
+        <a href="#terceros">8. Enlaces externos</a>
+        <a href="#propiedad">9. Propiedad intelectual</a>
+        <a href="#cambios">10. Cambios</a>
+        <a href="#contacto">11. Contacto</a>
+      </aside>
+
+      <section>
+        <article class="card" id="identificacion">
+          <h2>1. Identificación del sitio</h2>
+          <p>El presente sitio web, denominado <strong>Nómina Clara</strong>, ofrece una calculadora informativa de nómina para Colombia. En este documento, las expresiones “sitio”, “página”, “herramienta”, “nosotros” o “Nómina Clara” hacen referencia a esta página web y a sus funcionalidades.</p>
+          <p><strong>Responsable del sitio:</strong> [Nombre del titular o empresa]</p>
+          <p><strong>Correo de contacto:</strong> [correo@tudominio.com]</p>
+          <p><strong>País de operación:</strong> Colombia</p>
+        </article>
+
+        <article class="card" id="aceptacion">
+          <h2>2. Aceptación de los términos</h2>
+          <p>Al acceder, navegar o usar esta página, el usuario acepta estos términos y condiciones. Si no está de acuerdo con el contenido de este documento, debe abstenerse de utilizar la herramienta.</p>
+          <p>El uso de la calculadora es voluntario y bajo responsabilidad del usuario. La página puede ser consultada sin crear una cuenta y sin suministrar datos personales directamente en formularios de registro.</p>
+        </article>
+
+        <article class="card" id="servicio">
+          <h2>3. Descripción del servicio</h2>
+          <p>Nómina Clara permite realizar cálculos aproximados relacionados con salario neto, deducciones del trabajador, aportes del empleador, auxilio de transporte, prestaciones sociales y costo mensual estimado de un empleado en Colombia.</p>
+          <p>Los parámetros usados pueden incluir, entre otros, salario mínimo mensual legal vigente, auxilio legal de transporte, UVT, porcentajes de salud, pensión, ARL, caja de compensación, SENA, ICBF y prestaciones sociales.</p>
+          <div class="highlight-box">
+            <p>Los valores calculados son de carácter informativo. La herramienta no reemplaza una liquidación oficial de nómina, una certificación laboral, una consulta ante autoridad competente ni el criterio de un contador, abogado laboralista, tributarista o profesional de nómina.</p>
+          </div>
+        </article>
+
+        <article class="card" id="responsabilidad">
+          <h2>4. Limitación de responsabilidad</h2>
+          <p>Aunque procuramos que la información publicada sea clara y actualizada, no garantizamos que los cálculos sean exactos para todos los casos particulares. La nómina puede variar por factores como:</p>
+          <ul>
+            <li>tipo de contrato;</li>
+            <li>jornada laboral;</li>
+            <li>incapacidades, licencias, ausencias o suspensiones;</li>
+            <li>recargos nocturnos, dominicales o festivos;</li>
+            <li>beneficios extralegales;</li>
+            <li>libranzas, embargos u otras deducciones autorizadas;</li>
+            <li>tratamientos tributarios individuales;</li>
+            <li>convenciones colectivas, pactos, reglamentos internos o acuerdos especiales;</li>
+            <li>cambios normativos, jurisprudenciales o administrativos.</li>
+          </ul>
+          <p>El usuario acepta que cualquier decisión laboral, contractual, financiera, contable o tributaria tomada con base en los resultados de la herramienta debe ser previamente verificada con una fuente oficial o con un profesional competente.</p>
+        </article>
+
+        <article class="card" id="uso">
+          <h2>5. Uso permitido de la página</h2>
+          <p>El usuario se compromete a utilizar la página de forma lícita, respetuosa y conforme a estos términos. Está prohibido:</p>
+          <ul>
+            <li>usar la página para fines fraudulentos, engañosos o contrarios a la ley;</li>
+            <li>intentar alterar, vulnerar, sobrecargar o afectar el funcionamiento del sitio;</li>
+            <li>copiar o reutilizar masivamente el diseño, el código o el contenido sin autorización, salvo los usos permitidos por la ley;</li>
+            <li>presentar los resultados de la calculadora como una liquidación oficial o certificada;</li>
+            <li>eliminar avisos legales, advertencias, créditos o referencias de la página.</li>
+          </ul>
+        </article>
+
+        <article class="card" id="datos">
+          <h2>6. Política de privacidad y tratamiento de datos personales</h2>
+          <p>Esta página está diseñada para funcionar sin que el usuario tenga que crear una cuenta o entregar directamente datos personales en un formulario. Los valores ingresados en la calculadora se procesan localmente en el navegador del usuario y no se almacenan en una base de datos propia del sitio.</p>
+
+          <h3>6.1. Datos que puede tratar el sitio</h3>
+          <p>Dependiendo de la configuración técnica, servicios de analítica, alojamiento, seguridad o publicidad, podrían tratarse datos técnicos o de navegación, tales como:</p>
+          <ul>
+            <li>dirección IP aproximada;</li>
+            <li>tipo de navegador y dispositivo;</li>
+            <li>sistema operativo;</li>
+            <li>páginas visitadas dentro del sitio;</li>
+            <li>fecha y hora de acceso;</li>
+            <li>cookies o identificadores similares.</li>
+          </ul>
+
+          <div class="data-table" aria-label="Tabla de datos personales">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tipo de dato</th>
+                  <th>Finalidad</th>
+                  <th>Origen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Datos ingresados en la calculadora</td>
+                  <td>Realizar el cálculo estimado solicitado por el usuario</td>
+                  <td>Ingresados voluntariamente por el usuario y procesados en el navegador</td>
+                </tr>
+                <tr>
+                  <td>Datos técnicos de navegación</td>
+                  <td>Seguridad, funcionamiento del sitio, analítica y mejora de experiencia</td>
+                  <td>Navegador, servidor, proveedor de hosting o herramientas de terceros</td>
+                </tr>
+                <tr>
+                  <td>Cookies publicitarias o analíticas</td>
+                  <td>Medición de tráfico, personalización de anuncios y monetización</td>
+                  <td>Servicios externos como Google AdSense, Google Analytics u otros proveedores implementados</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>6.2. Finalidades del tratamiento</h3>
+          <ul>
+            <li>permitir el funcionamiento de la calculadora;</li>
+            <li>mejorar la experiencia de navegación;</li>
+            <li>analizar el uso general del sitio;</li>
+            <li>prevenir abuso, fraude o ataques técnicos;</li>
+            <li>mostrar publicidad o medir su rendimiento, cuando se implementen servicios publicitarios;</li>
+            <li>cumplir obligaciones legales aplicables.</li>
+          </ul>
+
+          <h3>6.3. Derechos de los titulares</h3>
+          <p>De acuerdo con la normativa colombiana sobre protección de datos personales, los titulares pueden solicitar, cuando corresponda, el acceso, actualización, rectificación o supresión de sus datos personales, así como revocar la autorización otorgada para su tratamiento.</p>
+          <p>Para ejercer estos derechos, el usuario puede escribir al correo: <strong>[correo@tudominio.com]</strong>.</p>
+
+          <h3>6.4. Datos sensibles</h3>
+          <p>El usuario no debe ingresar datos sensibles, información médica, datos de menores de edad, datos biométricos, información íntima, datos financieros confidenciales ni información personal innecesaria para usar la calculadora.</p>
+        </article>
+
+        <article class="card" id="cookies">
+          <h2>7. Cookies, analítica y publicidad</h2>
+          <p>El sitio puede utilizar cookies propias o de terceros para permitir su funcionamiento, analizar tráfico, mejorar contenidos y mostrar anuncios. Las cookies son pequeños archivos que se almacenan en el navegador del usuario y permiten recordar o reconocer cierta información técnica.</p>
+          <p>En caso de integrar servicios como Google AdSense, Google Analytics u otras plataformas de publicidad o medición, dichos terceros podrán usar cookies, identificadores de dispositivo u otras tecnologías similares conforme a sus propias políticas.</p>
+          <p>El usuario puede bloquear, eliminar o configurar las cookies desde las opciones de su navegador. Sin embargo, algunas funciones del sitio podrían verse afectadas si se deshabilitan ciertas cookies.</p>
+        </article>
+
+        <article class="card" id="terceros">
+          <h2>8. Enlaces y servicios de terceros</h2>
+          <p>La página puede contener enlaces a fuentes oficiales, sitios informativos, servicios de publicidad, herramientas de analítica, plataformas de alojamiento u otros servicios externos. No somos responsables por el contenido, disponibilidad, seguridad o políticas de privacidad de sitios de terceros.</p>
+          <p>El usuario debe revisar las condiciones y políticas de cada sitio externo que visite.</p>
+        </article>
+
+        <article class="card" id="propiedad">
+          <h2>9. Propiedad intelectual</h2>
+          <p>El diseño, estructura, textos, marca, elementos visuales y código de esta página pertenecen a sus respectivos titulares, salvo que se indique expresamente lo contrario. El acceso a la página no otorga al usuario derechos de propiedad intelectual sobre el sitio.</p>
+          <p>Se permite consultar la página para fines personales, educativos o informativos. Cualquier reproducción, modificación, distribución o explotación comercial no autorizada puede estar restringida por la legislación aplicable.</p>
+        </article>
+
+        <article class="card" id="cambios">
+          <h2>10. Modificaciones del sitio y de estos términos</h2>
+          <p>Podemos actualizar, corregir, suspender o modificar la página, sus cálculos, contenidos, enlaces, funcionalidades o estos términos en cualquier momento. La versión vigente será la publicada en esta página con su respectiva fecha de actualización.</p>
+          <p>El uso continuado del sitio después de publicada una modificación implica la aceptación de la versión actualizada.</p>
+        </article>
+
+        <article class="card" id="contacto">
+          <h2>11. Contacto</h2>
+          <p>Para consultas, solicitudes relacionadas con datos personales, reportes de errores o inquietudes sobre estos términos, el usuario puede comunicarse a:</p>
+          <div class="highlight-box">
+            <p><strong>Responsable:</strong> [Nombre del titular o empresa]</p>
+            <p><strong>Correo:</strong> [correo@tudominio.com]</p>
+            <p><strong>Sitio web:</strong> [https://tudominio.com]</p>
+            <p><strong>Ciudad / país:</strong> Bogotá D.C., Colombia</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Nómina Clara · Términos, condiciones y privacidad.</p>
+      <p><a href="index.html">Volver a la calculadora</a></p>
+    </footer>
+  </div>
+</body>
+</html>
